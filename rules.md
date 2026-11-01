@@ -1,4 +1,4 @@
-# Project Rules — projectm
+# Project Rules — marmuftech.com
 
 ## 0. Rule Inheritance Reference
 This project strictly inherits all global workspace standards, UI/UX responsiveness rules, security guidelines, and server credentials defined in:
@@ -8,9 +8,9 @@ This project strictly inherits all global workspace standards, UI/UX responsiven
 ---
 
 ## 1. Project Overview & Architecture
-- **Project Name:** `projectm`
-- **Location:** `C:\Users\sarav\Desktop\jagan\projects\projectm`
-- **GitHub Repository:** `https://github.com/saravanajagan007/projectm`
+- **Project Name:** `marmuftech.com`
+- **Location:** `C:\Users\sarav\Desktop\jagan\projects\marmuftech.com`
+- **GitHub Repository:** `https://github.com/saravanajagan007/marmuftech.com`
 - **Live Production URL:** `https://projectm.cloudcrafts.net`
 - **Cloudflare Pages Subdomain:** `https://projectm-28x.pages.dev`
 
