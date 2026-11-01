@@ -52,7 +52,7 @@ export class AuthController {
     res.clearCookie('refresh_token', { path: '/', httpOnly: true, secure: isProd, sameSite: 'lax' });
   }
 
-  @Throttle({ default: { limit: 5, ttl: 60000 } }) // Anti brute-force: max 5 attempts per minute
+  @Throttle({ default: { limit: 25, ttl: 60000 } }) // Anti brute-force: max 25 attempts per minute
   @Post('login')
   @HttpCode(HttpStatus.OK)
   async login(

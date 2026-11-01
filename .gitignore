@@ -40,3 +40,5 @@ pnpm-debug.log*
 *.pem
 *.tsbuildinfo
 inquiries_log.txt
+
+.playwright-mcp/
