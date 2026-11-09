@@ -13,6 +13,8 @@ This project strictly inherits all global workspace standards, UI/UX responsiven
 - **GitHub Repository:** `https://github.com/saravanajagan007/marmuftech.com`
 - **Live Production URL:** `https://marmuftech.cloudcrafts.net`
 - **VPS app path:** `/srv/apps/marmuftech.cloudcrafts.net`
+- **Processes:** pm2 `marmuftech-web` on port 3021 and `marmuftech-api` on port 4021
+- **Nginx site file:** `/srv/docker/nginx/conf.d/marmuftech.cloudcrafts.net.conf`, baked into the `srv-nginx` image
 
 ---
 
