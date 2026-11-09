@@ -7,7 +7,8 @@ export const metadata: Metadata = {
   description:
     'MarmufTech is a full-service digital agency building ultra-fast custom websites, high-converting e-commerce stores, and data-driven digital marketing campaigns that scale revenue.',
   icons: {
-    icon: '/favicon.svg',
+    icon: '/favicon.png',
+    apple: '/brand/marmuf-logo.png',
   },
 };
 
