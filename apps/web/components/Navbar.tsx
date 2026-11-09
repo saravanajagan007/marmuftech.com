@@ -55,7 +55,7 @@ export function Navbar() {
                   ) : (
                     <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-bold bg-slate-100 text-slate-700 border border-slate-300">
                       <UserCheck className="h-3 w-3 mr-1 text-slate-600" />
-                      ADD_COMPANY
+                      STAFF
                     </span>
                   )}
                 </div>

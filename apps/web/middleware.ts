@@ -36,7 +36,7 @@ export function middleware(request: NextRequest) {
     return NextResponse.redirect(new URL('/admin/manage-companies', request.url));
   }
 
-  // 3. /admin/manage-companies requires authenticated session (ADMIN or ADD_COMPANY)
+  // 3. /admin/manage-companies requires authenticated session (ADMIN or STAFF)
   const isManageCompaniesRoute = pathname.startsWith('/admin/manage-companies');
   if (isManageCompaniesRoute) {
     if (!hasAuth) {

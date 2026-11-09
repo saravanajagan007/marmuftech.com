@@ -89,7 +89,7 @@ export default function AdminLoginPage() {
             Admin Portal Login
           </h1>
           <p className="text-xs text-slate-400 mt-1">
-            Restricted access for Company Administrators & Operators
+            Restricted access for Company Administrators & Staff
           </p>
         </div>
 
@@ -118,7 +118,7 @@ export default function AdminLoginPage() {
               <input
                 type="email"
                 {...register('email')}
-                placeholder="admin@projectm.com"
+                placeholder="admin@marmuftech.com"
                 className={`block w-full pl-10 pr-4 py-2.5 text-sm rounded-xl border bg-slate-800/80 text-white placeholder-slate-500 focus:outline-none focus:ring-2 transition-all ${
                   errors.email
                     ? 'border-red-500 focus:ring-red-400'
@@ -185,27 +185,27 @@ export default function AdminLoginPage() {
           <div className="grid grid-cols-2 gap-3">
             <button
               type="button"
-              onClick={() => fillCredentials('admin@projectm.com', 'Password123!')}
+              onClick={() => fillCredentials('admin@marmuftech.com', 'Password123!')}
               className="p-2.5 rounded-xl border border-purple-900/60 bg-purple-950/30 hover:bg-purple-900/40 text-left transition-colors cursor-pointer group"
             >
               <div className="flex items-center space-x-1.5 mb-1 text-purple-400 font-bold text-xs">
                 <Shield className="h-3 w-3" />
                 <span>ADMIN</span>
               </div>
-              <p className="text-[10px] text-slate-300 font-mono truncate">admin@projectm.com</p>
+              <p className="text-[10px] text-slate-300 font-mono truncate">admin@marmuftech.com</p>
               <p className="text-[9px] text-slate-500">Password123!</p>
             </button>
 
             <button
               type="button"
-              onClick={() => fillCredentials('operator@projectm.com', 'Password123!')}
+              onClick={() => fillCredentials('staff@marmuftech.com', 'Password123!')}
               className="p-2.5 rounded-xl border border-emerald-900/60 bg-emerald-950/30 hover:bg-emerald-900/40 text-left transition-colors cursor-pointer group"
             >
               <div className="flex items-center space-x-1.5 mb-1 text-emerald-400 font-bold text-xs">
                 <UserCheck className="h-3 w-3" />
-                <span>ADD_COMPANY</span>
+                <span>STAFF</span>
               </div>
-              <p className="text-[10px] text-slate-300 font-mono truncate">operator@projectm.com</p>
+              <p className="text-[10px] text-slate-300 font-mono truncate">staff@marmuftech.com</p>
               <p className="text-[9px] text-slate-500">Password123!</p>
             </button>
           </div>

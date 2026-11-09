@@ -48,7 +48,7 @@ const multerOptions = {
 export class CompaniesController {
   constructor(private readonly companiesService: CompaniesService) {}
 
-  @Roles(UserRole.ADMIN, UserRole.ADD_COMPANY)
+  @Roles(UserRole.ADMIN, UserRole.STAFF)
   @Post()
   @UseInterceptors(FilesInterceptor('images', MAX_COMPANY_IMAGES, multerOptions))
   async create(
@@ -59,13 +59,13 @@ export class CompaniesController {
     return this.companiesService.create(createDto, files || [], user.id);
   }
 
-  @Roles(UserRole.ADMIN, UserRole.ADD_COMPANY)
+  @Roles(UserRole.ADMIN, UserRole.STAFF)
   @Get()
   async findAll(@Query() query: CompanyQueryDto) {
     return this.companiesService.findAll(query);
   }
 
-  @Roles(UserRole.ADMIN, UserRole.ADD_COMPANY)
+  @Roles(UserRole.ADMIN, UserRole.STAFF)
   @Get(':id')
   async findOne(@Param('id') id: string) {
     return this.companiesService.findOne(id);

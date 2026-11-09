@@ -109,7 +109,7 @@ export default function ManageCompaniesPage() {
               ) : (
                 <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-slate-100 text-slate-700 border border-slate-300">
                   <UserCheck className="h-3.5 w-3.5 mr-1 text-slate-600" />
-                  ADD_COMPANY
+                  STAFF
                 </span>
               )}
             </div>
@@ -320,7 +320,7 @@ export default function ManageCompaniesPage() {
                         )}
                       </td>
 
-                      {/* Actions: Admin gets Edit & Delete; Operator gets View Gallery */}
+                      {/* Actions: Admin gets Edit & Delete; Staff gets View Gallery */}
                       <td className="px-6 py-4 text-right">
                         <div className="flex items-center justify-end space-x-1.5">
                           {isAdmin ? (

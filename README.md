@@ -13,7 +13,7 @@ A production-ready full-stack TypeScript monorepo built with **Turborepo**, **Ne
   - Authenticated users are directed directly to the unified **Manage Companies** panel (`/admin/manage-companies`).
 - **Manage Companies (`/admin/manage-companies`):** The primary hub for authenticated users:
   - **`ADMIN` Role**: Can add companies, view gallery, edit company details/images, and delete companies.
-  - **`ADD_COMPANY` Role**: Can add companies and view image gallery; edit/delete actions are hidden and guarded.
+  - **`STAFF` Role**: Can add companies and view image gallery; edit/delete actions are hidden and guarded.
   - Includes debounced global search across name, contact person, phone numbers, and email; server-side pagination; country code selector with 10-digit phone validation; and a maximum limit of 5 images per company.
 
 ---
@@ -48,7 +48,7 @@ projectm/
 │       └── prisma/
 │           ├── schema.prisma   # SQLite default for instant zero-dependency local run
 │           ├── schema.postgres.prisma # PostgreSQL schema for production
-│           └── seed.ts         # Pre-seeds ADMIN, ADD_COMPANY, and initial companies
+│           └── seed.ts         # Pre-seeds ADMIN, STAFF, and initial companies
 ├── packages/
 │   └── shared/                 # Shared TypeScript interfaces, DTOs, and Zod schemas
 ├── legacy/                     # Archived previous static website files
@@ -70,7 +70,7 @@ pnpm install
 # Sync database schema (SQLite dev.db)
 pnpm db:push
 
-# Seed ADMIN, ADD_COMPANY accounts & sample companies
+# Seed ADMIN, STAFF accounts & sample companies
 pnpm db:seed
 ```
 
@@ -89,7 +89,7 @@ pnpm dev
 
 | Role | Email | Password | Permissions |
 | :--- | :--- | :--- | :--- |
-| **`ADMIN`** | `admin@projectm.com` | `Password123!` | Full Access: Manage Companies screen (`/admin/manage-companies`), Edit records, delete companies, upload/remove images, add company modal, view directory. |
-| **`ADD_COMPANY`** | `operator@projectm.com` | `Password123!` | Operator Access: Add Company modal popup, view directory, global search, pagination, photo galleries. Blocked from Edit/Delete. |
+| **`ADMIN`** | `admin@marmuftech.com` | `Password123!` | Full Access: Manage Companies screen (`/admin/manage-companies`), Edit records, delete companies, upload/remove images, add company modal, view directory. |
+| **`STAFF`** | `staff@marmuftech.com` | `Password123!` | Staff Access: Add Company modal popup, view directory, global search, pagination, photo galleries. Blocked from Edit/Delete. |
 
 *(The `/admin` login page includes one-click demo quick-fill buttons for fast testing).*

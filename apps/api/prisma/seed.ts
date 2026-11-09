@@ -17,22 +17,22 @@ async function main() {
   // 2. Create ADMIN User
   const adminUser = await prisma.user.create({
     data: {
-      email: 'admin@projectm.com',
+      email: 'admin@marmuftech.com',
       passwordHash,
       role: 'ADMIN',
     },
   });
-  console.log('✅ Created ADMIN user: admin@projectm.com / Password123!');
+  console.log('✅ Created ADMIN user: admin@marmuftech.com / Password123!');
 
-  // 3. Create ADD_COMPANY User
-  const operatorUser = await prisma.user.create({
+  // 3. Create STAFF User
+  const staffUser = await prisma.user.create({
     data: {
-      email: 'operator@projectm.com',
+      email: 'staff@marmuftech.com',
       passwordHash,
-      role: 'ADD_COMPANY',
+      role: 'STAFF',
     },
   });
-  console.log('✅ Created ADD_COMPANY user: operator@projectm.com / Password123!');
+  console.log('✅ Created STAFF user: staff@marmuftech.com / Password123!');
 
   // 4. Seed Initial Companies with multi-image support
   const company1 = await prisma.company.create({
@@ -59,7 +59,7 @@ async function main() {
       contactNumber: '+44 2079460912',
       alternateContactNumber: '+44 2079460913',
       email: 'hello@bluewavemedia.co.uk',
-      createdById: operatorUser.id,
+      createdById: staffUser.id,
       images: {
         create: [
           { url: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80' },
@@ -93,7 +93,7 @@ async function main() {
       contactNumber: '+91 8807649359',
       alternateContactNumber: '+91 9123456789',
       email: 'partners@starlightfinancial.com',
-      createdById: operatorUser.id,
+      createdById: staffUser.id,
       images: {
         create: [
           { url: 'https://images.unsplash.com/photo-1554469384-e58fac16e23a?auto=format&fit=crop&w=800&q=80' },
