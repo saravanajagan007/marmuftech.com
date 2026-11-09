@@ -12,7 +12,7 @@ export function AboutSection() {
           <div className="lg:col-span-7 space-y-6">
             <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-emerald-50 text-xs font-bold text-emerald-800">
               <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse-dot shadow-[0_0_8px_rgba(16,185,129,0.5)]" />
-              <span>About ProjectM</span>
+              <span>About MarmufTech</span>
             </div>
 
             <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
@@ -23,7 +23,7 @@ export function AboutSection() {
             <p className="text-base text-slate-600 leading-relaxed">
               We bridge the gap between creative web craftsmanship and performance digital marketing.
               Founded on the belief that modern businesses need fast, reliable web technology and transparent
-              marketing campaigns, ProjectM helps brands establish a dominant digital footprint without bloated
+              marketing campaigns, MarmufTech helps brands establish a dominant digital footprint without bloated
               overhead or sluggish development cycles.
             </p>
 

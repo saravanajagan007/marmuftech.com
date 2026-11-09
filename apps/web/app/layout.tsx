@@ -3,9 +3,9 @@ import './globals.css';
 import { AuthProvider } from '../lib/auth-context';
 
 export const metadata: Metadata = {
-  title: 'ProjectM — Premium Web Design, Development & Digital Marketing Agency',
+  title: 'MarmufTech — Premium Web Design, Development & Digital Marketing Agency',
   description:
-    'ProjectM is a full-service digital agency building ultra-fast custom websites, high-converting e-commerce stores, and data-driven digital marketing campaigns that scale revenue.',
+    'MarmufTech is a full-service digital agency building ultra-fast custom websites, high-converting e-commerce stores, and data-driven digital marketing campaigns that scale revenue.',
   icons: {
     icon: '/favicon.svg',
   },

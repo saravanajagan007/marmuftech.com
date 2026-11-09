@@ -1,5 +1,5 @@
 /**
- * ProjectM Agency - Main Interactive Scripts
+ * MarmufTech - Main Interactive Scripts
  * Pure Vanilla JavaScript (ES6+) - Fast, Lightweight, Shared Hosting Compatible
  */
 

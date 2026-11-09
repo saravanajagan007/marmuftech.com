@@ -71,7 +71,7 @@ export function HeroSection() {
 
             {/* Subheadline description */}
             <p className="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-              We are <strong className="text-slate-900">ProjectM</strong> — an elite digital
+              We are <strong className="text-slate-900">MarmufTech</strong> — an elite digital
               agency uniting custom web engineering with data-driven marketing campaigns to
               capture leads, accelerate sales, and dominate search results.
             </p>

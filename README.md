@@ -1,4 +1,4 @@
-# ProjectM — Agency Website & Enterprise Company Portal
+# MarmufTech — Agency Website & Enterprise Company Portal
 
 A production-ready full-stack TypeScript monorepo built with **Turborepo**, **Next.js (Frontend)**, and **NestJS (Backend)**.
 
@@ -6,7 +6,7 @@ A production-ready full-stack TypeScript monorepo built with **Turborepo**, **Ne
 
 ## 🌐 Public Website & Admin Routing Structure
 
-- **Public Agency Website (`/`):** The root URL serves the high-performance ProjectM digital agency landing page (converted from the HTML5 agency template with Tailwind CSS, Google Fonts Outfit & Plus Jakarta Sans, dynamic hero rotator, service tabs, process roadmap, testimonials, FAQ, and working project inquiry form).
+- **Public Agency Website (`/`):** The root URL serves the high-performance MarmufTech digital agency landing page (converted from the HTML5 agency template with Tailwind CSS, Google Fonts Outfit & Plus Jakarta Sans, dynamic hero rotator, service tabs, process roadmap, testimonials, FAQ, and working project inquiry form).
 - **Admin Portal & Login (`/admin`):** 
   - The login interface is accessible at `/admin` (any navigation to `/login` automatically redirects to `/admin`).
   - Unauthenticated visitors see the secure Admin Login card with quick-fill demo credentials.
@@ -21,7 +21,7 @@ A production-ready full-stack TypeScript monorepo built with **Turborepo**, **Ne
 ## 🏗️ Monorepo Architecture
 
 ```
-projectm/
+marmuftech/
 ├── apps/
 │   ├── web/                    # Next.js 15+ App Router, Tailwind CSS, Lucide Icons, RHF + Zod
 │   │   ├── app/

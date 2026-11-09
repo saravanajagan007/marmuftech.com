@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Menu, X, ArrowRight, Shield } from 'lucide-react';
+import { BrandLogo } from '../BrandLogo';
 
 export function LandingNavbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -27,30 +28,8 @@ export function LandingNavbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2.5 group">
-            <svg
-              className="h-10 w-10 transition-transform group-hover:scale-105"
-              viewBox="0 0 64 64"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect width="64" height="64" rx="16" fill="#ecfdf5" stroke="#10b981" strokeWidth="2" />
-              <path
-                d="M18 46 L18 18 L28 18 C35 18 39 22 39 27 C39 32 35 36 28 36 L24 36 L24 46 Z M24 24 L24 30 L28 30 C31 30 33 29 33 27 C33 25 31 24 28 24 Z"
-                fill="url(#navLogoGrad)"
-              />
-              <polygon points="36,46 44,20 48,20 40,46" fill="#059669" />
-              <circle cx="48" cy="44" r="3.5" fill="#10b981" />
-              <defs>
-                <linearGradient id="navLogoGrad" x1="0" y1="0" x2="64" y2="64">
-                  <stop stopColor="#10b981" />
-                  <stop offset="1" stopColor="#047857" />
-                </linearGradient>
-              </defs>
-            </svg>
-            <span className="font-extrabold text-xl tracking-tight text-slate-900">
-              Project<span className="text-emerald-600">M</span>
-            </span>
+          <Link href="/" className="group" aria-label="MarmufTech home">
+            <BrandLogo />
           </Link>
 
           {/* Desktop Navigation Links */}
@@ -188,7 +167,7 @@ export function LandingNavbar() {
               Get Free Proposal
             </a>
             <a
-              href="https://wa.me/918807649359?text=Hello%20ProjectM%20Agency,%20I%20would%20like%20to%20inquire%20about%20a%20new%20website%20and%20marketing%20project."
+              href="https://wa.me/918807649359?text=Hello%20MarmufTech,%20I%20would%20like%20to%20inquire%20about%20a%20new%20website%20and%20marketing%20project."
               target="_blank"
               rel="noopener noreferrer"
               className="w-full text-center py-2 rounded-xl text-xs font-semibold text-emerald-700 border border-emerald-300 hover:bg-emerald-50"

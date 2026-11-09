@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { Shield } from 'lucide-react';
+import { BrandLogo } from '../BrandLogo';
 
 export function LandingFooter() {
   const [newsletterEmail, setNewsletterEmail] = useState('');
@@ -22,19 +23,8 @@ export function LandingFooter() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-slate-800">
           {/* Brand Col */}
           <div className="lg:col-span-4 space-y-4">
-            <Link href="/" className="flex items-center space-x-2">
-              <svg className="h-9 w-9" viewBox="0 0 64 64" fill="none">
-                <rect width="64" height="64" rx="16" fill="#064e3b" stroke="#10b981" strokeWidth="2" />
-                <path
-                  d="M18 46 L18 18 L28 18 C35 18 39 22 39 27 C39 32 35 36 28 36 L24 36 L24 46 Z M24 24 L24 30 L28 30 C31 30 33 29 33 27 C33 25 31 24 28 24 Z"
-                  fill="#10b981"
-                />
-                <polygon points="36,46 44,20 48,20 40,46" fill="#34d399" />
-                <circle cx="48" cy="44" r="3.5" fill="#10b981" />
-              </svg>
-              <span className="font-extrabold text-xl tracking-tight text-white">
-                Project<span className="text-emerald-500">M</span>
-              </span>
+            <Link href="/" className="group inline-flex" aria-label="MarmufTech home">
+              <BrandLogo tone="dark" size="sm" />
             </Link>
 
             <p className="text-slate-400 text-xs leading-relaxed max-w-sm">
@@ -99,7 +89,7 @@ export function LandingFooter() {
               </li>
               <li>
                 <a href="#about" className="hover:text-emerald-400 transition-colors">
-                  About ProjectM
+                  About MarmufTech
                 </a>
               </li>
               <li>
@@ -161,7 +151,7 @@ export function LandingFooter() {
 
         {/* Bottom copyright */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-500 gap-4">
-          <div>© {new Date().getFullYear()} ProjectM Agency. All rights reserved.</div>
+          <div>© {new Date().getFullYear()} MarmufTech. All rights reserved.</div>
           <div className="flex items-center space-x-4">
             <a href="#hero" className="hover:text-emerald-400 transition-colors">
               Privacy Policy

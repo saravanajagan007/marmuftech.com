@@ -14,7 +14,7 @@ const FAQS = [
   },
   {
     q: 'Do you handle both web development and ongoing digital marketing?',
-    a: 'Yes. That is our core superpower. Having separate design, engineering, and marketing teams often causes silos and broken analytics. At ProjectM, your website is engineered from day one around technical SEO, high conversion rates, and paid ad tracking pixels.',
+    a: 'Yes. That is our core superpower. Having separate design, engineering, and marketing teams often causes silos and broken analytics. At MarmufTech, your website is engineered from day one around technical SEO, high conversion rates, and paid ad tracking pixels.',
   },
   {
     q: 'Do I own the full source code and intellectual property?',

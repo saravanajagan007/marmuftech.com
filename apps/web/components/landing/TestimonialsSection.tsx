@@ -6,14 +6,14 @@ import { Star } from 'lucide-react';
 const TESTIMONIALS = [
   {
     quote:
-      'ProjectM transformed our online presence completely. Our page loading time dropped to 1.1 seconds, and our lead volume surged by 340% within just three months. They are masters of both code and marketing.',
+      'MarmufTech transformed our online presence completely. Our page loading time dropped to 1.1 seconds, and our lead volume surged by 340% within just three months. They are masters of both code and marketing.',
     name: 'David Larson',
     role: 'Managing Director, Apex Capital',
     initials: 'DL',
   },
   {
     quote:
-      'Finding an agency that truly understands both high-conversion web development and paid ads is nearly impossible. ProjectM scaled our e-commerce store from $35K to over $180K/month with a 6.2x ROAS.',
+      'Finding an agency that truly understands both high-conversion web development and paid ads is nearly impossible. MarmufTech scaled our e-commerce store from $35K to over $180K/month with a 6.2x ROAS.',
     name: 'Sarah Jenkins',
     role: 'Founder & CEO, LuxeLiving',
     initials: 'SM',

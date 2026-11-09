@@ -1,5 +1,5 @@
 /**
- * ProjectM Agency - Contact Form & AJAX Submission Handler
+ * MarmufTech - Contact Form & AJAX Submission Handler
  * Features: Client-side validation, Honeypot bot protection, Submission rate limiting,
  * Toast notifications, and graceful fallback for static/shared hosting environments.
  */
@@ -69,7 +69,7 @@ function initContactForm() {
     e.preventDefault();
 
     // 1. Anti-abuse: Rate-limiting check (30 seconds cooldown)
-    const lastSubmitTime = localStorage.getItem('projectm_last_submit');
+    const lastSubmitTime = localStorage.getItem('marmuftech_last_submit');
     const now = Date.now();
     if (lastSubmitTime && now - parseInt(lastSubmitTime, 10) < 30000) {
       const waitSeconds = Math.ceil((30000 - (now - parseInt(lastSubmitTime, 10))) / 1000);
@@ -169,7 +169,7 @@ function initContactForm() {
       }
 
       if (isSuccess) {
-        localStorage.setItem('projectm_last_submit', Date.now().toString());
+        localStorage.setItem('marmuftech_last_submit', Date.now().toString());
         showToast('Inquiry Received! 🚀', responseMsg, 'success');
         form.reset();
       }
@@ -177,7 +177,7 @@ function initContactForm() {
     } catch (err) {
       console.warn('Network / AJAX submission error:', err);
       // Fallback: If offline or testing purely static, gracefully store local lead
-      localStorage.setItem('projectm_last_submit', Date.now().toString());
+      localStorage.setItem('marmuftech_last_submit', Date.now().toString());
       showToast('Proposal Request Received!', 'Thank you! Your project details have been recorded. We will connect with you within 24 hours.', 'success');
       form.reset();
     } finally {

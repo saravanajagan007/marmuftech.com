@@ -4,6 +4,7 @@ import React from 'react';
 import Link from 'next/link';
 import { useAuth } from '../lib/auth-context';
 import { LogOut, ShieldCheck, UserCheck } from 'lucide-react';
+import { BrandLogo } from './BrandLogo';
 
 export function Navbar() {
   const { user, isAdmin, logout } = useAuth();
@@ -13,30 +14,8 @@ export function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Left: Brand Logo without 'Enterprise Portal' */}
-          <Link href="/admin/manage-companies" className="flex items-center space-x-3 group">
-            <svg
-              className="h-9 w-9 transition-transform group-hover:scale-105"
-              viewBox="0 0 64 64"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect width="64" height="64" rx="16" fill="#ecfdf5" stroke="#10b981" strokeWidth="2" />
-              <path
-                d="M18 46 L18 18 L28 18 C35 18 39 22 39 27 C39 32 35 36 28 36 L24 36 L24 46 Z M24 24 L24 30 L28 30 C31 30 33 29 33 27 C33 25 31 24 28 24 Z"
-                fill="url(#adminNavLogoGrad)"
-              />
-              <polygon points="36,46 44,20 48,20 40,46" fill="#059669" />
-              <circle cx="48" cy="44" r="3.5" fill="#10b981" />
-              <defs>
-                <linearGradient id="adminNavLogoGrad" x1="0" y1="0" x2="64" y2="64">
-                  <stop stopColor="#10b981" />
-                  <stop offset="1" stopColor="#047857" />
-                </linearGradient>
-              </defs>
-            </svg>
-            <span className="font-extrabold text-xl tracking-tight text-slate-900 group-hover:text-emerald-600 transition-colors">
-              ProjectM
-            </span>
+          <Link href="/admin/manage-companies" className="group" aria-label="MarmufTech companies">
+            <BrandLogo size="sm" compact />
           </Link>
 
           {/* Right: User Profile & Logout (No buttons in header) */}

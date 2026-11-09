@@ -22,10 +22,10 @@ export function FloatingActions() {
     <div className="fixed bottom-6 right-6 z-40 flex flex-col space-y-3">
       {/* WhatsApp Floating Button */}
       <a
-        href="https://wa.me/918807649359?text=Hello%20ProjectM%20Agency,%20I%20would%20like%20to%20inquire%20about%20a%20new%20website%20and%20marketing%20project."
+        href="https://wa.me/918807649359?text=Hello%20MarmufTech,%20I%20would%20like%20to%20inquire%20about%20a%20new%20website%20and%20marketing%20project."
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="Chat with ProjectM on WhatsApp"
+        aria-label="Chat with MarmufTech on WhatsApp"
         className="h-12 w-12 rounded-full bg-[#25d366] text-white flex items-center justify-center shadow-lg hover:scale-110 hover:shadow-xl transition-all cursor-pointer"
       >
         <svg className="h-6 w-6" viewBox="0 0 24 24" fill="currentColor">

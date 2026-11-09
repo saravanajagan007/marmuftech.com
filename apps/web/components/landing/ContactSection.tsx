@@ -118,7 +118,7 @@ export function ContactSection() {
                   <div>
                     <span className="text-xs text-slate-500 block">WhatsApp Chat</span>
                     <a
-                      href="https://wa.me/918807649359?text=Hello%20ProjectM%20Agency,%20I%20would%20like%20to%20inquire%20about%20a%20new%20website%20and%20marketing%20project."
+                      href="https://wa.me/918807649359?text=Hello%20MarmufTech,%20I%20would%20like%20to%20inquire%20about%20a%20new%20website%20and%20marketing%20project."
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-sm font-bold text-slate-900 hover:text-emerald-600 transition-colors"
@@ -135,10 +135,10 @@ export function ContactSection() {
                   <div>
                     <span className="text-xs text-slate-500 block">Email Inquiries</span>
                     <a
-                      href="mailto:hello@projectm.agency"
+                      href="mailto:hello@marmuftech.com"
                       className="text-sm font-bold text-slate-900 hover:text-emerald-600 transition-colors"
                     >
-                      hello@projectm.agency
+                      hello@marmuftech.com
                     </a>
                   </div>
                 </div>
@@ -158,7 +158,7 @@ export function ContactSection() {
 
               <div className="pt-2 flex flex-col sm:flex-row gap-3">
                 <a
-                  href="https://wa.me/918807649359?text=Hello%20ProjectM%20Agency,%20I%20would%20like%20to%20inquire%20about%20a%20new%20website%20and%20marketing%20project."
+                  href="https://wa.me/918807649359?text=Hello%20MarmufTech,%20I%20would%20like%20to%20inquire%20about%20a%20new%20website%20and%20marketing%20project."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full text-center py-2.5 px-4 rounded-xl text-xs font-bold text-white bg-emerald-600 hover:bg-emerald-700 shadow-md shadow-emerald-600/20 transition-all cursor-pointer"
