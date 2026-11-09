@@ -24,8 +24,7 @@ async function bootstrap() {
   const allowedOrigins = [
     process.env.FRONTEND_URL || 'http://localhost:3000',
     'http://localhost:3000',
-    'https://projectm.cloudcrafts.net',
-    'https://projectm-28x.pages.dev',
+    'https://marmuftech.cloudcrafts.net',
   ];
 
   app.enableCors({
